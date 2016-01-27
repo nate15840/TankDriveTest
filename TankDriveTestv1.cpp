@@ -2,7 +2,7 @@
 
 /*
  * Nate Thorn
- * C++
+ * C
  * 23 JAN 2016
  */
 
