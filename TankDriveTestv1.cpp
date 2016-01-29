@@ -33,9 +33,9 @@ public:
 		rightStick(rightStickChannel),
 		leftStick(leftStickChannel),
 		dsol(sol0, sol1),
-		tank(rightVictor, leftVictor)
+		tank(leftVictor, rightVictor)
 	{}
-
+/*
 	void RobotInit()
 	{
 
@@ -50,6 +50,7 @@ public:
 	{
 
 	}
+*/
 
 	void TeleopInit()
 	{
@@ -58,7 +59,7 @@ public:
 
 	void TeleopPeriodic()
 	{
-		tank.TankDrive(rightStick, leftStick);
+		tank.TankDrive(leftStick, rightStick);
 		if ((rightStick.GetRawButton(SHIFT_BUTTON) == true) or (leftStick.GetRawButton(SHIFT_BUTTON) == true))
 		{
 			dsol.Set(DoubleSolenoid::kForward);
