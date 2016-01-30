@@ -24,7 +24,7 @@ public:
 	DoubleSolenoid dsol;
 	RobotDrive tank;
 
-	const int SHIFT_BUTTON	=	1;
+	const int SHIFT_BUTTON					=	1;
 
 	Robot():
 		rightVictor(rightChannel),
